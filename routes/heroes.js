@@ -8,11 +8,11 @@ router.get("/", (req, res) => {
 });
 
 router.put("/", (req, res) => {
-  heroesService.create(req, res);
+  heroesService.update(req, res);
 });
 
 router.post("/", (req, res) => {
-  heroesService.update(req, res);
+  heroesService.create(req, res);
 });
 
 router.delete("/:id", (req, res) => {
